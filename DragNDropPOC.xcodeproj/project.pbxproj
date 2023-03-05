@@ -13,6 +13,16 @@
 		780158FD29B305E900B8A8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780158FB29B305E900B8A8A8 /* Main.storyboard */; };
 		780158FF29B305EA00B8A8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780158FE29B305EA00B8A8A8 /* Assets.xcassets */; };
 		7801590229B305EA00B8A8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7801590029B305EA00B8A8A8 /* LaunchScreen.storyboard */; };
+		7801590D29B307FE00B8A8A8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801590C29B307FE00B8A8A8 /* CollectionViewController.swift */; };
+		7801591029B30AB700B8A8A8 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801590F29B30AB700B8A8A8 /* CardCollectionViewCell.swift */; };
+		7801591329B30B6300B8A8A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801591229B30B6300B8A8A8 /* DataModel.swift */; };
+		7801591629B30CAE00B8A8A8 /* CollectionViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801591529B30CAE00B8A8A8 /* CollectionViewDatasource.swift */; };
+		7801591829B30FB100B8A8A8 /* CollectionViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801591729B30FB100B8A8A8 /* CollectionViewControllerModel.swift */; };
+		7801591B29B3212400B8A8A8 /* CollectionViewController+FlowLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801591A29B3212400B8A8A8 /* CollectionViewController+FlowLayoutDelegate.swift */; };
+		7801591D29B3236900B8A8A8 /* CollectionViewController+DragDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801591C29B3236900B8A8A8 /* CollectionViewController+DragDelegate.swift */; };
+		7801591F29B32F0500B8A8A8 /* CollectionViewController+DropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801591E29B32F0500B8A8A8 /* CollectionViewController+DropDelegate.swift */; };
+		7801592129B337E400B8A8A8 /* TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801592029B337E400B8A8A8 /* TableViewDatasource.swift */; };
+		7801592329B338A900B8A8A8 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801592229B338A900B8A8A8 /* CardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		780158FE29B305EA00B8A8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7801590129B305EA00B8A8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7801590329B305EA00B8A8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7801590C29B307FE00B8A8A8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		7801590F29B30AB700B8A8A8 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		7801591229B30B6300B8A8A8 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7801591529B30CAE00B8A8A8 /* CollectionViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDatasource.swift; sourceTree = "<group>"; };
+		7801591729B30FB100B8A8A8 /* CollectionViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerModel.swift; sourceTree = "<group>"; };
+		7801591A29B3212400B8A8A8 /* CollectionViewController+FlowLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewController+FlowLayoutDelegate.swift"; sourceTree = "<group>"; };
+		7801591C29B3236900B8A8A8 /* CollectionViewController+DragDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewController+DragDelegate.swift"; sourceTree = "<group>"; };
+		7801591E29B32F0500B8A8A8 /* CollectionViewController+DropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewController+DropDelegate.swift"; sourceTree = "<group>"; };
+		7801592029B337E400B8A8A8 /* TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDatasource.swift; sourceTree = "<group>"; };
+		7801592229B338A900B8A8A8 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,73 @@
 		780158F429B305E900B8A8A8 /* DragNDropPOC */ = {
 			isa = PBXGroup;
 			children = (
-				780158F529B305E900B8A8A8 /* AppDelegate.swift */,
-				780158F729B305E900B8A8A8 /* SceneDelegate.swift */,
-				780158F929B305E900B8A8A8 /* ViewController.swift */,
-				780158FB29B305E900B8A8A8 /* Main.storyboard */,
-				780158FE29B305EA00B8A8A8 /* Assets.xcassets */,
-				7801590029B305EA00B8A8A8 /* LaunchScreen.storyboard */,
+				7801590A29B3062B00B8A8A8 /* resources */,
+				7801590929B3061400B8A8A8 /* UI */,
 				7801590329B305EA00B8A8A8 /* Info.plist */,
 			);
 			path = DragNDropPOC;
+			sourceTree = "<group>";
+		};
+		7801590929B3061400B8A8A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7801590B29B307A600B8A8A8 /* CollectionViewController */,
+				780158F529B305E900B8A8A8 /* AppDelegate.swift */,
+				780158F729B305E900B8A8A8 /* SceneDelegate.swift */,
+				780158F929B305E900B8A8A8 /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7801590A29B3062B00B8A8A8 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				780158FB29B305E900B8A8A8 /* Main.storyboard */,
+				780158FE29B305EA00B8A8A8 /* Assets.xcassets */,
+				7801590029B305EA00B8A8A8 /* LaunchScreen.storyboard */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		7801590B29B307A600B8A8A8 /* CollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7801591429B30C8700B8A8A8 /* Datasources */,
+				7801591129B30B3F00B8A8A8 /* DataModels */,
+				7801590E29B30A8C00B8A8A8 /* Cells */,
+				7801590C29B307FE00B8A8A8 /* CollectionViewController.swift */,
+				7801591C29B3236900B8A8A8 /* CollectionViewController+DragDelegate.swift */,
+				7801591E29B32F0500B8A8A8 /* CollectionViewController+DropDelegate.swift */,
+				7801591A29B3212400B8A8A8 /* CollectionViewController+FlowLayoutDelegate.swift */,
+				7801591729B30FB100B8A8A8 /* CollectionViewControllerModel.swift */,
+			);
+			path = CollectionViewController;
+			sourceTree = "<group>";
+		};
+		7801590E29B30A8C00B8A8A8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7801592229B338A900B8A8A8 /* CardTableViewCell.swift */,
+				7801590F29B30AB700B8A8A8 /* CardCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7801591129B30B3F00B8A8A8 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				7801591229B30B6300B8A8A8 /* DataModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		7801591429B30C8700B8A8A8 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				7801592029B337E400B8A8A8 /* TableViewDatasource.swift */,
+				7801591529B30CAE00B8A8A8 /* CollectionViewDatasource.swift */,
+			);
+			path = Datasources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +153,7 @@
 			buildConfigurationList = 7801590629B305EA00B8A8A8 /* Build configuration list for PBXNativeTarget "DragNDropPOC" */;
 			buildPhases = (
 				780158EE29B305E900B8A8A8 /* Sources */,
+				7801591929B3202700B8A8A8 /* SwiftLint */,
 				780158EF29B305E900B8A8A8 /* Frameworks */,
 				780158F029B305E900B8A8A8 /* Resources */,
 			);
@@ -133,14 +212,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7801591929B3202700B8A8A8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		780158EE29B305E900B8A8A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7801590D29B307FE00B8A8A8 /* CollectionViewController.swift in Sources */,
+				7801591F29B32F0500B8A8A8 /* CollectionViewController+DropDelegate.swift in Sources */,
+				7801592129B337E400B8A8A8 /* TableViewDatasource.swift in Sources */,
 				780158FA29B305E900B8A8A8 /* ViewController.swift in Sources */,
+				7801591829B30FB100B8A8A8 /* CollectionViewControllerModel.swift in Sources */,
 				780158F629B305E900B8A8A8 /* AppDelegate.swift in Sources */,
+				7801591029B30AB700B8A8A8 /* CardCollectionViewCell.swift in Sources */,
+				7801591D29B3236900B8A8A8 /* CollectionViewController+DragDelegate.swift in Sources */,
+				7801592329B338A900B8A8A8 /* CardTableViewCell.swift in Sources */,
 				780158F829B305E900B8A8A8 /* SceneDelegate.swift in Sources */,
+				7801591629B30CAE00B8A8A8 /* CollectionViewDatasource.swift in Sources */,
+				7801591B29B3212400B8A8A8 /* CollectionViewController+FlowLayoutDelegate.swift in Sources */,
+				7801591329B30B6300B8A8A8 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,8 +404,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +414,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lymes.DragNDropPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -321,8 +436,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +446,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lymes.DragNDropPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
