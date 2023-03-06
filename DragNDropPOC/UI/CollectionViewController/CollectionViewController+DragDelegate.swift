@@ -48,6 +48,7 @@ extension CollectionViewController: UICollectionViewDragDelegate {
            let indexPath = collectionDatasource?.indexPath(for: item),
            let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell {
             cell.cardView.backgroundColor = .red
+            cell.setNeedsDisplay()
         }
     }
 
@@ -56,6 +57,7 @@ extension CollectionViewController: UICollectionViewDragDelegate {
            let indexPath = collectionDatasource?.indexPath(for: item),
            let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell {
             cell.cardView.backgroundColor = .white
+            cell.setNeedsDisplay()
         }
     }
 }
